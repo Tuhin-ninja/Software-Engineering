@@ -47,4 +47,14 @@ public class PackageFactory {
 
         return null; 
     }
+
+    public static Controller getController(String type){
+        if(type == null) return null; 
+        else if(type.equalsIgnoreCase("basic")) return new SeparateController();
+        else if(type.equalsIgnoreCase("standard")) return new SeparateController();
+        else if(type.equalsIgnoreCase("advanced")) return new TouchScreenController(); 
+        else if(type.equalsIgnoreCase("premium")) return new TouchScreenController(); 
+
+        return null; 
+    }
 }

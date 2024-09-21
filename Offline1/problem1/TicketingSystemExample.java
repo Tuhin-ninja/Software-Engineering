@@ -57,8 +57,8 @@ public class TicketingSystemExample {
         
 
         director.ProduceTicket(ticketingSystemBuilder, pack, connection, framework);
-        Ticket t1 = ticketingSystemBuilder.GetTicket(); 
-        t1.show();
+        Ticket ticket = ticketingSystemBuilder.GetTicket(); 
+        ticket.show();
 
 
 
