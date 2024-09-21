@@ -8,7 +8,7 @@ public class TicketingSystem implements IBuilder {
         ticket.Add("Identification : "+PackageFactory.getIdentification(type).identify());
         ticket.Add("Payment Info : "+PackageFactory.getPayment(type).pay());
         ticket.Add("Storage : "+PackageFactory.getStorage(type).Store());
-        ticket.Add("Controller : "+PackageFactory.getController(type).control());
+        ticket.Add("Controller : "+PackageFactory.getController(type));
     }
 
     public void BuildConnection(String type){
