@@ -1,4 +1,4 @@
-package Offline2;
+package Offline2.problem1;
 
 public class Item implements Menu{
     private String name;

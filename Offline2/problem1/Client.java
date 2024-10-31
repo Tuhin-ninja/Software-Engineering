@@ -1,4 +1,4 @@
-package Offline2;
+package Offline2.problem1;
 import java.util.Scanner;
 
 
@@ -57,9 +57,7 @@ public class Client {
                     
                     else if (command.equalsIgnoreCase("Free")) {
                         String itemName = parts[1];
-                        System.out.println("Free Item: " + itemName);
                         for(Menu item : availableItems.items) {
-                            System.out.println(item.getName());
                             if(item.getName().equalsIgnoreCase(itemName)) {
                                 combo.addFreeItem(item);
                                 break;
@@ -70,7 +68,6 @@ public class Client {
                     else if (command.equalsIgnoreCase("Discount")) {
                         int percentage = Integer.parseInt(parts[1]);
                         combo.setDiscount(percentage);
-                        System.out.println("Discount of " + percentage + "% applied.");
                     } else {
                         System.out.println("Invalid command.");
                     }

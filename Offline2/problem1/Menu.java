@@ -1,4 +1,4 @@
-package Offline2;
+package Offline2.problem1;
 
 public interface Menu {
     public float getPrice();

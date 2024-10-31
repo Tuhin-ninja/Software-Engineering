@@ -1,4 +1,4 @@
-package Offline2;
+package Offline2.problem1;
 
 // import java.lang.reflect.Array;
 import java.util.ArrayList;
